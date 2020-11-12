@@ -13,7 +13,7 @@ header > h1 {
   text-align: center
 }
 article {
-  flex-grow: 2;
+  flex-grow: 2La;
   display: grid;
   grid-template-columns: 15px 3fr 15px;
   grid-template-rows: 15px auto 15px auto 15px auto 15px;
