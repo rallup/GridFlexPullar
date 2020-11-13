@@ -1,10 +1,11 @@
 body {
   display: flex;
-  flex-direction: column
+  flex-direction: row
   
 }
 
 header {
+  flex-shrink: 2
   display: grid;
   border: solid black 2px
   
@@ -13,10 +14,10 @@ header > h1 {
   text-align: center
 }
 article {
-  flex-grow: 2La;
+  flex-grow: 2;
   display: grid;
-  grid-template-columns: 15px 3fr 15px;
-  grid-template-rows: 15px auto 15px auto 15px auto 15px;
+  grid-template-columns: 15px 3fr 150px;
+  grid-template-rows: 51.25px auto 51.25px auto 51.25px auto 102.25px;
   border: solid black 2px
 
 }
@@ -38,9 +39,9 @@ article {
 
 aside {
   
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 6;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
   grid-row-end: 7;
   border: solid black 2px
 }
@@ -48,14 +49,14 @@ aside {
 .menu {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: flex-start
+  flex-direction: column;
+  justify-content: center
 }
 
 .menub {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: flex-start
 }
 .menu > li {
@@ -68,7 +69,10 @@ aside {
 
 
 footer {
-  flex-grow: 1;
+  flex-grow: 3;
+  display: grid;
+  grid-template-rows: 50px 3fr 150px;
+  grid-template-columns: 50px 3fr 166px;
   border: solid black 2px;
 }
 
@@ -77,10 +81,8 @@ nav {
   flex-direction: row
 }
 
-main {
+.sideview {
   display: flex;
-  flex-direction: row;
-
-  
+  flex-flow: wrap column;
+  align-items: flex-start
 }
-
