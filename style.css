@@ -13,24 +13,24 @@ header > h1 {
   text-align: center
 }
 article {
-  flex-grow: 2La;
+  flex-grow: 2;
   display: grid;
-  grid-template-columns: 15px 3fr 15px;
+  grid-template-columns: 15px 1fr 1fr 15px;
   grid-template-rows: 15px auto 15px auto 15px auto 15px;
   border: solid black 2px
 
 }
 .s1 {
- grid-column-start: 2;
-  grid-column-end: 3;
+ grid-column-start: 3;
+  grid-column-end: 4;
   grid-row-start: 2;
   grid-row-end: 3;
   border: solid black 2px
 }
 
 .s2 {
- grid-column-start: 2;
-  grid-column-end: 3;
+ grid-column-start: 3;
+  grid-column-end: 4;
   grid-row-start: 4;
   grid-row-end: 5;
   border: solid black 2px
@@ -40,22 +40,22 @@ aside {
   
   grid-column-start: 2;
   grid-column-end: 3;
-  grid-row-start: 6;
-  grid-row-end: 7;
+  grid-row-start: 2;
+  grid-row-end: 6;
   border: solid black 2px
 }
 
 .menu {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: flex-start
 }
 
 .menub {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: flex-start
 }
 .menu > li {
@@ -68,7 +68,11 @@ aside {
 
 
 footer {
-  flex-grow: 1;
+  flex-grow: 3;
+  display: grid;
+  text-align: center;
+  grid-template-columns: 30px 3fr 100px;
+  grid-template-rows: 25px 73px 66px;
   border: solid black 2px;
 }
 
@@ -84,3 +88,8 @@ main {
   
 }
 
+.sideview {
+  display: flex;
+  flex-flow: wrap row;
+  align-items: flex-start
+}
